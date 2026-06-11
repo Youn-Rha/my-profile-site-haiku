@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { projects } from "@/data/projects";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Code2 } from "lucide-react";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -40,7 +40,7 @@ export default function ProjectsPage() {
               {project.githubUrl && (
                 <Button variant="outline" size="sm" asChild>
                   <Link href={project.githubUrl} target="_blank">
-                    <Github className="mr-1 h-3 w-3" /> GitHub
+                    <Code2 className="mr-1 h-3 w-3" /> GitHub
                   </Link>
                 </Button>
               )}

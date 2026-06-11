@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Code2, Heart, Zap } from "lucide-react";
 
 const skills = ["TypeScript", "Next.js", "React", "Tailwind CSS", "Node.js"];
 
@@ -39,19 +39,19 @@ export default function HomePage() {
               </Button>
             </div>
             <div className="flex gap-3">
-              <Button variant="ghost" size="icon" asChild>
+              <Button variant="ghost" size="icon" asChild title="GitHub">
                 <Link href="https://github.com" target="_blank" aria-label="GitHub">
-                  <Github className="h-5 w-5" />
+                  <Code2 className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant="ghost" size="icon" asChild>
+              <Button variant="ghost" size="icon" asChild title="LinkedIn">
                 <Link href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                  <Linkedin className="h-5 w-5" />
+                  <Heart className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant="ghost" size="icon" asChild>
+              <Button variant="ghost" size="icon" asChild title="Email">
                 <Link href="mailto:hello@example.com" aria-label="Email">
-                  <Mail className="h-5 w-5" />
+                  <Zap className="h-5 w-5" />
                 </Link>
               </Button>
             </div>

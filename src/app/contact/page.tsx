@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { useState } from "react";
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Code2, Heart, Zap } from "lucide-react";
 import Link from "next/link";
 
 export default function ContactPage() {
@@ -39,9 +39,9 @@ export default function ContactPage() {
           </p>
           <div className="space-y-3">
             {[
-              { icon: Mail, label: "Email", href: "mailto:hello@example.com", text: "hello@example.com" },
-              { icon: Github, label: "GitHub", href: "https://github.com", text: "github.com/your-name" },
-              { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com", text: "linkedin.com/in/your-name" },
+              { icon: Zap, label: "Email", href: "mailto:hello@example.com", text: "hello@example.com" },
+              { icon: Code2, label: "GitHub", href: "https://github.com", text: "github.com/your-name" },
+              { icon: Heart, label: "LinkedIn", href: "https://linkedin.com", text: "linkedin.com/in/your-name" },
             ].map(({ icon: Icon, label, href, text }) => (
               <Link key={label} href={href} target="_blank" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                 <Icon className="h-5 w-5" />
